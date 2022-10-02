@@ -1,20 +1,18 @@
-# No longer under development
+# No longer abandoned!
 
-You can download one of the old builds from the Releases tab.
+A revival of an abandoned project!
 
 # OpenMW for Android
 
-[Google Play](https://play.google.com/store/apps/details?id=is.xyz.omw) | [Google Play (Nightly)](https://play.google.com/store/apps/details?id=is.xyz.omw_nightly)
-
-[F-Droid](https://f-droid.org/packages/is.xyz.omw/) | [F-Droid (Nightly)](https://f-droid.org/packages/is.xyz.omw_nightly/)
-
-[FAQ & Info](https://omw.xyz.is/)
+[Original project](https://github.com/xyzz/openmw-android)
 
 ## Building
 
 There are two steps for building OpenMW for Android. The first step is building C/C++ libraries. The second step is building the Java launcher.
 
 ### Prerequisites
+
+> Scandal_UK: Using `sudo apt install build-essential` should get you the tools you need. Also install `FFMPEG` and Android SDK.
 
 You will need some standard tools installed that you probably already have (bash, gcc, g++, sha256sum, unzip).
 

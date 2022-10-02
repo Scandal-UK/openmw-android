@@ -10,10 +10,10 @@ Subject: [PATCH] settingswindow: save user settings file when "ok" is pressed
  3 files changed, 9 insertions(+), 1 deletion(-)
 
 diff --git a/apps/openmw/main.cpp b/apps/openmw/main.cpp
-index 709ffda2c..cfc5db224 100644
+index 8f7e16058..91ef26e42 100644
 --- a/apps/openmw/main.cpp
 +++ b/apps/openmw/main.cpp
-@@ -278,6 +278,8 @@ namespace
+@@ -291,6 +291,8 @@ namespace
      };
  }
  
@@ -22,7 +22,7 @@ index 709ffda2c..cfc5db224 100644
  int runApplication(int argc, char *argv[])
  {
  #ifdef __APPLE__
-@@ -288,6 +290,7 @@ int runApplication(int argc, char *argv[])
+@@ -301,6 +303,7 @@ int runApplication(int argc, char *argv[])
  
      osg::setNotifyHandler(new OSGLogHandler());
      Files::ConfigurationManager cfgMgr;
@@ -61,7 +61,7 @@ index 3b4afc852..a05f80b4c 100644
      }
  
 diff --git a/components/settings/settings.hpp b/components/settings/settings.hpp
-index ecc5aa5fd..6f20535be 100644
+index e3a29d4c3..15970598f 100644
 --- a/components/settings/settings.hpp
 +++ b/components/settings/settings.hpp
 @@ -32,7 +32,7 @@ namespace Settings

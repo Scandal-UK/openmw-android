@@ -12,7 +12,7 @@ There are two steps for building OpenMW for Android. The first step is building 
 
 ### Prerequisites
 
-> Scandal_UK: Using `sudo apt install build-essential` should get you the tools you need. Also install `FFMPEG` and Android SDK.
+> Scandal-UK: Using `sudo apt install build-essential` should get you the tools you need. Also install `unzip`, `FFMPEG` and Android SDK.
 
 You will need some standard tools installed that you probably already have (bash, gcc, g++, sha256sum, unzip).
 
@@ -22,6 +22,8 @@ Additionally, to build the launcher you will need Android SDK installed, it is s
 
 ### Step 1: Build the libraries
 
+> Scandal-UK: Specify 64-bit when building with `./build.sh --arch arm64`
+
 Go into the `buildscripts` directory and run `./build.sh`. The script will automatically download the Android native toolchain and all dependencies, and will compile and install them.
 
 ### Step 2: Build the Java launcher
@@ -29,6 +31,8 @@ Go into the `buildscripts` directory and run `./build.sh`. The script will autom
 To get an APK file you can install, open the `openmw-android` directory in Android Studio and run the project.
 
 Alternatively, if you do not have Android Studio installed or would rather not use it, run `./gradlew assembleDebug` from the root directory of this repository. The resulting APK, located at `./app/build/outputs/apk/debug/app-debug.apk`, can be transferred to the device and installed.
+
+> Scandal-UK: Add an environment variable for the Android SDK e.g. `export ANDROID_SDK_ROOT=/home/user/.android`
 
 ## Notes for developers
 

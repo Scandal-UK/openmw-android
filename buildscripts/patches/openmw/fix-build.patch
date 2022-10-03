@@ -1,5 +1,5 @@
 diff --git a/apps/openmw/CMakeLists.txt b/apps/openmw/CMakeLists.txt
-index 13fb71714..36f0540ab 100644
+index 13fb71714..92f435642 100644
 --- a/apps/openmw/CMakeLists.txt
 +++ b/apps/openmw/CMakeLists.txt
 @@ -185,7 +185,9 @@ if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.16 AND MSVC)

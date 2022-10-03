@@ -42,18 +42,18 @@ index 7be3cd8bf..224854c05 100644
      Settings::Manager::saveUser((mCfgMgr.getUserConfigPath() / "settings.cfg").string());
      Settings::ShaderManager::get().save();
 diff --git a/components/debug/debugging.cpp b/components/debug/debugging.cpp
-index 5225c59e8..d17439d01 100644
+index 5225c59e8..e534bcd67 100644
 --- a/components/debug/debugging.cpp
 +++ b/components/debug/debugging.cpp
-@@ -11,6 +11,8 @@
- #include <components/windows.hpp>
- #endif
+@@ -13,6 +13,8 @@
+
+ #include <SDL_messagebox.h>
 
 +#include <osgViewer/Viewer>
 +
- #include <SDL_messagebox.h>
-
  namespace Debug
+ {
+ #ifdef _WIN32
 @@ -286,6 +288,8 @@ void setupLogging(const std::string& logDir, const std::string& appName, std::io
  #endif
  }
@@ -71,4 +71,3 @@ index 5225c59e8..d17439d01 100644
  #if (defined(__APPLE__) || defined(__linux) || defined(__unix) || defined(__posix))
          if (!isatty(fileno(stdin)))
  #endif
- 

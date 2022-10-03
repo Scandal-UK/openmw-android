@@ -1,8 +1,8 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 5adb72da4..b2d1391e7 100644
--- a/CMakeLists.txt
-++ b/CMakeLists.txt
-@@ -285,8 +285,8 @@ find_package(FFmpeg REQUIRED COMPONENTS AVCODEC AVFORMAT AVUTIL SWSCALE SWRESAMP
+index 55f964167..4ac75e9bb 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -294,8 +294,8 @@ find_package(FFmpeg REQUIRED COMPONENTS AVCODEC AVFORMAT AVUTIL SWSCALE SWRESAMP
  if(FFmpeg_FOUND)
      SET(FFVER_OK TRUE)
 

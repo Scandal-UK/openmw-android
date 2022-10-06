@@ -12,7 +12,7 @@ There are two steps for building OpenMW for Android. The first step is building 
 
 ### Prerequisites
 
-> Scandal-UK: Using `sudo apt install build-essential` should get you the tools you need. Also install `unzip`, `FFMPEG` and Android SDK.
+> Scandal-UK: Using `sudo apt install build-essential` should get you the tools you need. Also install `unzip`, `python-is-python3`, `cmake` and Android SDK.
 
 You will need some standard tools installed that you probably already have (bash, gcc, g++, sha256sum, unzip).
 
